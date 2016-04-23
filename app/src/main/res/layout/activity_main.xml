@@ -3,10 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDFDFE0"
     android:orientation="vertical"
-    android:background="#000000"
     tools:context="com.errec.android.enfermagemdebolso.MainActivity">
 
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:cropToPadding="true"
+        android:src="@drawable/image3" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,12 +36,6 @@
 
     </LinearLayout>
 
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:cropToPadding="true"
-        android:src="@drawable/image3" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,26 +47,26 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt1"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt1" />
 
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt2"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt2" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt3"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt3" />
     </LinearLayout>
 
     <LinearLayout
@@ -80,25 +80,25 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt4"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt4" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt5"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt5" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt6"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt6" />
     </LinearLayout>
 
     <LinearLayout
@@ -111,25 +111,25 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt7"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt7" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt8"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt8" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FDFDFE"
             android:cropToPadding="true"
-            android:src="@drawable/bt9"
-            android:background="#FDFDFE" />
+            android:src="@drawable/bt9" />
     </LinearLayout>
 
 </LinearLayout>
