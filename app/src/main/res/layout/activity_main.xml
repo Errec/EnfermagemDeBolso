@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#000000"
     tools:context="com.errec.android.enfermagemdebolso.MainActivity">
 
 
@@ -23,13 +24,18 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="6" />
+            android:layout_weight="6"
+            android:cropToPadding="true"
+            android:src="@drawable/image2" />
+
     </LinearLayout>
 
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5" />
+        android:layout_weight="1.5"
+        android:cropToPadding="true"
+        android:src="@drawable/image3" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,17 +46,59 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt1"
+            android:background="#FDFDFE" />
+
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt2"
+            android:background="#FDFDFE" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt3"
+            android:background="#FDFDFE" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cropToPadding="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt4"
+            android:background="#FDFDFE" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt5"
+            android:background="#FDFDFE" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt6"
+            android:background="#FDFDFE" />
     </LinearLayout>
 
     <LinearLayout
@@ -62,39 +110,26 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt7"
+            android:background="#FDFDFE" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt8"
+            android:background="#FDFDFE" />
 
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            android:src="@drawable/bt9"
+            android:background="#FDFDFE" />
     </LinearLayout>
 
 </LinearLayout>
