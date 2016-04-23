@@ -55,8 +55,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt1" />
 
             <TextView
@@ -76,8 +78,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt2" />
 
             <TextView
@@ -97,8 +101,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt3" />
 
             <TextView
@@ -121,8 +127,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt4" />
 
             <TextView
@@ -142,8 +150,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt5" />
 
             <TextView
@@ -163,8 +173,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt6" />
 
             <TextView
@@ -187,8 +199,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt7" />
 
             <TextView
@@ -208,8 +222,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt8" />
 
             <TextView
@@ -229,8 +245,10 @@
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/bt9" />
 
             <TextView
