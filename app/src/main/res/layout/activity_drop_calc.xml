@@ -21,12 +21,29 @@
             android:gravity="center"
             android:text="Quantidade: "
             android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="bottom|end"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:textSize="26sp"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="[ml] "
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+
 
     </LinearLayout>
 
@@ -43,12 +60,28 @@
             android:gravity="center"
             android:text="Tempo: "
             android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="bottom|end"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="26sp"
+            android:background="#FFFFFF"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="min "
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
 
     </LinearLayout>
 
@@ -107,39 +140,39 @@
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="4"
-            android:textSize="32dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="5"
-            android:textSize="32dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="6"
-            android:textSize="32dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="del"
-            android:textSize="24dp"
             android:textColor="#d61010"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:textSize="24dp" />
 
         <Button
             android:layout_width="0dp"
-            android:text="Reset"
-            android:textSize="18dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="Reset"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
@@ -151,38 +184,38 @@
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="7"
-            android:textSize="32dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="8"
-            android:textSize="32dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="9"
-            android:textSize="32dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="0"
-            android:textSize="32dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
-            android:text="."
-            android:textSize="32dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="."
+            android:textSize="32dp" />
 
     </LinearLayout>
 
