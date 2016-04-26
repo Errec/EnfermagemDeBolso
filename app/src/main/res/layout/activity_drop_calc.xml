@@ -3,27 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#000000"
+    android:orientation="vertical"
     tools:context="com.errec.android.enfermagemdebolso.DropCalc">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Quantidade: "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <TextView
-            android:layout_width="0"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -33,14 +37,18 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:gravity="center"
+            android:text="Tempo: "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
 
         <TextView
-            android:layout_width="0"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -62,23 +70,32 @@
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="1"
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="2"
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="3"
+            android:textSize="32dp" />
 
         <Button
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="2"
-            android:layout_height="match_parent" />
+            android:text="Calcular"
+            android:textColor="#07a319"
+            android:textSize="24dp" />
 
     </LinearLayout>
 
@@ -90,28 +107,39 @@
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="4"
+            android:textSize="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="5"
+            android:textSize="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="6"
+            android:textSize="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="del"
+            android:textSize="24dp"
+            android:textColor="#d61010"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="Reset"
+            android:textSize="18dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -123,28 +151,38 @@
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="7"
+            android:textSize="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="8"
+            android:textSize="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="9"
+            android:textSize="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="0"
+            android:textSize="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent" />
+            android:text="."
+            android:textSize="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
