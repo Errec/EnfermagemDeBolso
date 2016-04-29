@@ -1,8 +1,5 @@
 package com.errec.android.enfermagemdebolso;
 
-/**
- * Created by Raniro on 29/04/2016.
- */
     public class Dictionary {
 
         private String name;
@@ -16,7 +13,7 @@ package com.errec.android.enfermagemdebolso;
         this.category = category;
     }
 
-    public String getMake() {
+    public String getName() {
         return name;
     }
 
@@ -24,7 +21,7 @@ package com.errec.android.enfermagemdebolso;
         return iconID;
     }
 
-    public String getCondition() {
+    public String getCategory() {
         return category;
     }
 }
