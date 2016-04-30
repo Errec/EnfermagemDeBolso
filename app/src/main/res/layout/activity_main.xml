@@ -51,6 +51,7 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/bt_drop"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
@@ -58,6 +59,7 @@
                 android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bt1" />
 
@@ -74,6 +76,7 @@
                 android:background="#000000" />
 
             <ImageButton
+                android:id="@+id/bt_dictionary"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
@@ -81,6 +84,7 @@
                 android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:onClick="setupDictionaryButton"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bt2" />
 
