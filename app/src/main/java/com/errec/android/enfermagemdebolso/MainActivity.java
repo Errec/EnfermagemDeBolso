@@ -3,6 +3,8 @@ package com.errec.android.enfermagemdebolso;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,13 +19,22 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupDropCalcButton() {
 
-        startActivity(new Intent(MainActivity.this, DropCalc.class));
+        ImageButton messageButton = (ImageButton)findViewById(R.id.bt_drop);
+        messageButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, DropCalc.class));
+            }
+        });
     }
 
     private void setupDictionaryButton() {
 
-        startActivity(new Intent(MainActivity.this, MedicalDictionary.class));
+        ImageButton messageButton = (ImageButton)findViewById(R.id.bt_dictionary);
+        messageButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, MedicalDictionary.class));
+            }
+        });
     }
-
 
 }
