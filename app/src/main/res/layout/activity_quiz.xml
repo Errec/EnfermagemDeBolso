@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0037ff"
+        android:paddingBottom="24dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:text="Prefeitura de Doutor Maurício Cardoso - RS\nENFERMEIRO"
+        android:textColor="#ece8e8"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e1e0e0"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFF"
+                android:paddingBottom="20dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="20dp"
+                android:text="      A liderança pode ser considerada um processo de influência que o indivíduo utiliza sobre o outro, para o alcance dos objetivos numa determinada situação. É através da liderança que o enfermeiro tenta conciliar as metas da organização com a do grupo de enfermagem, geralmente envolve o conceito de poder e autoridade, abrangendo todas as maneiras pelas quais se introduzem mudanças no comportamento de pessoas ou de um grupo de pessoas. Sobre os estilos de liderança em enfermagem assinale a alternativa que refere-se a liderança autocrática:"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e1e0e0">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Líder autocrata é aquele profissional que não se envolve nas atividades de sua área, deixa por conta os subordinados, exercendo pouca influência sobre eles. "
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="O líder autocrata favorece a centralização do poder, promovendo um comportamento dependente e submisso aos membros do grupo, com sentimentos de tensão, frustração e sobre tudo apresenta manifestação de conflito entre membros da equipe."
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="O líder autocrata favorece a autonomia do grupo para decidir e implementar estratégias para resolução dos problemas, para atingir metas, deixando o caráter do líder intervir apenas quando o grupo solicita e necessita de orientações técnicas."
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="O líder autocrata é convicto que não há um único estilo ou característica de liderança válida para toda e qualquer situação, cada uma requer um estilo de liderança diferente para alcançar a eficácia no trabalho e promover o desempenho satisfatório dos subordinados."
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="O líder autocrata acredita que a grande desvantagem do estilo e que a descentralização do poder influencia a independência e o descomprometimento dos membros do grupo com os objetivos e metas da organização."
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="20dp"
+                android:background="#489bbc"
+                android:gravity="center"
+                android:paddingLeft="90dp"
+                android:paddingRight="90dp"
+                android:text="Responder"
+                android:textColor="#FFFF" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="8dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:text="Proxima"
+                android:textColor="#FFFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

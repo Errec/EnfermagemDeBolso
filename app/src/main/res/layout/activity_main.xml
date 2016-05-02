@@ -67,8 +67,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textAllCaps="true"
-                android:text="Gotejamento" />
+                android:text="Gotejamento"
+                android:textAllCaps="true" />
 
             <TextView
                 android:layout_width="100dp"
@@ -93,8 +93,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textAllCaps="true"
-                android:text="Dicionario" />
+                android:text="Dicionario"
+                android:textAllCaps="true" />
 
             <TextView
                 android:layout_width="100dp"
@@ -135,9 +135,9 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:onClick="setupQuizButton"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:onClick="setupQuizButton"
                 android:scaleType="fitCenter"
                 android:src="@drawable/bt4" />
 
@@ -145,8 +145,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textAllCaps="true"
-                android:text="Quiz" />
+                android:text="Quiz"
+                android:textAllCaps="true" />
 
             <TextView
                 android:layout_width="100dp"
