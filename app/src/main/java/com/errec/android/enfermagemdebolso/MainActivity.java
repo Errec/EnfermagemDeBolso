@@ -15,13 +15,14 @@ public class MainActivity extends AppCompatActivity {
 
         setupDropCalcButton();
         setupDictionaryButton();
+        setupQuizButton();
     }
 
     private void setupDropCalcButton() {
 
         ImageButton messageButton = (ImageButton)findViewById(R.id.bt_drop);
-        messageButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        messageButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DropCalc.class));
             }
         });
@@ -33,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
         messageButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MainActivity.this, MedicalDictionary.class));
+            }
+        });
+    }
+
+    private void setupQuizButton() {
+
+        ImageButton messageButton = (ImageButton)findViewById(R.id.bt_quiz);
+        messageButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, Quiz.class));
             }
         });
     }

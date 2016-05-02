@@ -67,7 +67,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Botao 3" />
+                android:textAllCaps="true"
+                android:text="Gotejamento" />
 
             <TextView
                 android:layout_width="100dp"
@@ -92,7 +93,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Botao 2" />
+                android:textAllCaps="true"
+                android:text="Dicionario" />
 
             <TextView
                 android:layout_width="100dp"
@@ -127,11 +129,13 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/bt_quiz"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
+                android:onClick="setupQuizButton"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
                 android:scaleType="fitCenter"
@@ -141,7 +145,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Botao 4" />
+                android:textAllCaps="true"
+                android:text="Quiz" />
 
             <TextView
                 android:layout_width="100dp"
