@@ -9,8 +9,10 @@
 
     <Button
         android:layout_width="match_parent"
+        android:id="@+id/bt_news"
         android:layout_height="0dp"
         android:layout_weight="1.5"
+        android:onClick="setupNewsButton"
         android:background="@drawable/image3"
         android:cropToPadding="true"
         android:text="testando um dois tres" />

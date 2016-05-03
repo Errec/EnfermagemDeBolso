@@ -10,7 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#575785" />
+        android:gravity="center"
+        android:text="Noticias Enfermagem"
+        android:textColor="#101010"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bab7b7" />
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card1_view"
@@ -28,7 +36,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1.5"
-                android:text="TEST" />
+                android:paddingLeft="8dp"
+                android:text="Forum mineiro se prepara para o dia nacinal da valorizaçào dos enfermeiros braçudos"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,34 +58,42 @@
                         android:id="@+id/card1_font"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="8"
-                        android:background="#59eae1" />
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="http://www.corenmg.gov.br/" />
 
                     <TextView
                         android:id="@+id/card1_text"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
-                        android:background="#FFD95286" />
+                        android:layout_weight="8"
+                        android:paddingLeft="8dp"
+                        android:text="A Enfermagem representa maior contingente da força de trabalho do Sistema Único de Saúde (SUS), mas ainda é necessário sensibilizar seus usuários e trabalhadores na luta pela regulamentação da..."
+                        android:textColor="#000000" />
                 </LinearLayout>
 
                 <ImageView
                     android:id="@+id/card1_img"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="5" />
+                    android:layout_weight="5"
+                    android:src="@drawable/imgEnf" />
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:paddingEnd="6dp"
+                android:gravity="end"
+                android:text="Comentarios    Compartilhar"
                 android:layout_weight="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#000000" />
+                android:background="#bab7b7" />
 
         </LinearLayout>
 
@@ -96,7 +116,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1.5"
-                android:text="TEST" />
+                android:paddingLeft="8dp"
+                android:text="Braçudas do Corenmg atacam novamente em reunião com deputado obeso"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -114,34 +138,43 @@
                         android:id="@+id/card2_font"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="8"
-                        android:background="#59eae1" />
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="http://www.corenmg.gov.br/" />
 
                     <TextView
                         android:id="@+id/card2_text"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="2"
-                        android:background="#FFD95286" />
+                        android:layout_weight="8"
+                        android:paddingLeft="8dp"
+                        android:text="A enfermagem é a maior força de trabalho do Sistema Único de Saúde (SUS) em número, mas ainda carece de reconhecimento por parte das políticas públicas. É necessário que os profissionais..."
+
+                        android:textColor="#000000" />
                 </LinearLayout>
 
                 <ImageView
                     android:id="@+id/card2_img"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="5" />
+                    android:layout_weight="5"
+                    android:src="@drawable/nerwsEnf2" />
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:paddingEnd="6dp"
+                android:gravity="end"
+                android:text="Comentarios    Compartilhar"
                 android:layout_weight="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#000000" />
+                android:background="#bab7b7" />
 
         </LinearLayout>
 
