@@ -18,7 +18,8 @@
         <activity android:name=".DropCalc" />
         <activity android:name=".MedicalDictionary" />
         <activity android:name=".Quiz" />
-        <activity android:name=".News"></activity>
+        <activity android:name=".News" />
+        <activity android:name=".Legis"></activity>
     </application>
 
 </manifest>
