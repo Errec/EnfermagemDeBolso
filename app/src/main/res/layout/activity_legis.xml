@@ -3,85 +3,182 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDFDFE"
-    android:orientation="vertical"
+    android:background="#b6e4b5"
+    android:orientation="horizontal"
     tools:context="com.errec.android.enfermagemdebolso.MainActivity">
 
-
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/mainlayout"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:foregroundGravity="bottom"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/ivFullScreenAd"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/image1" />
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="30dp"
-            android:layout_gravity="bottom"
-            android:background="#80000000"
-            android:orientation="vertical">
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-        <TextView
-            android:id="@+id/detailTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:paddingLeft="10dip"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Please swipe up"
-            android:textColor="#FFFF"
-            android:textIsSelectable="true"
-            android:textSize="20sp" />
-        </LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:foregroundGravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
 
+            <ImageView
 
-    </FrameLayout>
-
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/mainlayout"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:foregroundGravity="bottom"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/ivFullScreenAd"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/image1" />
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="30dp"
-            android:layout_gravity="bottom"
-            android:background="#80000000"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/detailTitle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:paddingLeft="10dip"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Please swipe up"
-                android:textColor="#FFFF"
-                android:textIsSelectable="true"
-                android:textSize="20sp" />
-        </LinearLayout>
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/pol_pnab" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="#80000000"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dip"
+                    android:text="Política Nacional de Atenção Básica"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFF"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
 
 
-    </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:foregroundGravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/pol_pnan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="#80000000"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dip"
+                    android:text="Política Nacional de Alimentação e Nutrição"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFF"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:foregroundGravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/pol_pnpic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="#80000000"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dip"
+                    android:text="Política Nacional de Práticas Integrativas e Complementares no SUS "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFF"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:foregroundGravity="bottom"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/pol_bucal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="#80000000"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dip"
+                    android:text="Diretrizes da política nacional de saúde bucal"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFF"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
