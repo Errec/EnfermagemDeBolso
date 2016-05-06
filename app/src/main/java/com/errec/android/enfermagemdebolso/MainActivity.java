@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setupDictionaryButton();
         setupQuizButton();
         setupNewsButton();
+        setupLegisButton();
     }
 
     private void setupDropCalcButton() {
@@ -56,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
         messageButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MainActivity.this, News.class));
+            }
+        });
+    }
+
+    private void setupLegisButton() {
+
+        ImageButton messageButton = (ImageButton) findViewById(R.id.bt_legis);
+        messageButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Legis.class));
             }
         });
     }

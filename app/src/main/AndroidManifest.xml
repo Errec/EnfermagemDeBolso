@@ -19,7 +19,7 @@
         <activity android:name=".MedicalDictionary" />
         <activity android:name=".Quiz" />
         <activity android:name=".News" />
-        <activity android:name=".Legis"></activity>
+        <activity android:name=".Legis" />
     </application>
 
 </manifest>

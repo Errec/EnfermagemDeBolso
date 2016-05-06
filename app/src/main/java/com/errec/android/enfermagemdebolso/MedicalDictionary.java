@@ -33,6 +33,37 @@ public class MedicalDictionary extends AppCompatActivity {
         medicalTerm.add(new Dictionary("Viagra", R.drawable.dic_capsule,"Medicamento"));
         medicalTerm.add(new Dictionary("Socorrista de gatos", R.drawable.dic_nurse,"Especialidade"));
         medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope,"Instrumento"));
+        medicalTerm.add(new Dictionary("Bandaid 5000", R.drawable.dic_bandaid, "Curativo"));
+        medicalTerm.add(new Dictionary("Pressao Snaguinea", R.drawable.dic_blood_pressure, "Medicao"));
+        medicalTerm.add(new Dictionary("Soro", R.drawable.dic_bottle, "Medicamento"));
+        medicalTerm.add(new Dictionary("Viagra", R.drawable.dic_capsule, "Medicamento"));
+        medicalTerm.add(new Dictionary("Socorrista de gatos", R.drawable.dic_nurse, "Especialidade"));
+        medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope, "Instrumento"));
+        medicalTerm.add(new Dictionary("Bandaid 5000", R.drawable.dic_bandaid, "Curativo"));
+        medicalTerm.add(new Dictionary("Pressao Snaguinea", R.drawable.dic_blood_pressure, "Medicao"));
+        medicalTerm.add(new Dictionary("Soro", R.drawable.dic_bottle, "Medicamento"));
+        medicalTerm.add(new Dictionary("Viagra", R.drawable.dic_capsule, "Medicamento"));
+        medicalTerm.add(new Dictionary("Socorrista de gatos", R.drawable.dic_nurse, "Especialidade"));
+        medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope, "Instrumento"));
+        medicalTerm.add(new Dictionary("Bandaid 5000", R.drawable.dic_bandaid, "Curativo"));
+        medicalTerm.add(new Dictionary("Pressao Snaguinea", R.drawable.dic_blood_pressure, "Medicao"));
+        medicalTerm.add(new Dictionary("Soro", R.drawable.dic_bottle, "Medicamento"));
+        medicalTerm.add(new Dictionary("Viagra", R.drawable.dic_capsule, "Medicamento"));
+        medicalTerm.add(new Dictionary("Socorrista de gatos", R.drawable.dic_nurse, "Especialidade"));
+        medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope, "Instrumento"));
+        medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope, "Instrumento"));
+        medicalTerm.add(new Dictionary("Bandaid 5000", R.drawable.dic_bandaid, "Curativo"));
+        medicalTerm.add(new Dictionary("Pressao Snaguinea", R.drawable.dic_blood_pressure, "Medicao"));
+        medicalTerm.add(new Dictionary("Soro", R.drawable.dic_bottle, "Medicamento"));
+        medicalTerm.add(new Dictionary("Viagra", R.drawable.dic_capsule, "Medicamento"));
+        medicalTerm.add(new Dictionary("Socorrista de gatos", R.drawable.dic_nurse, "Especialidade"));
+        medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope, "Instrumento"));
+        medicalTerm.add(new Dictionary("Bandaid 5000", R.drawable.dic_bandaid, "Curativo"));
+        medicalTerm.add(new Dictionary("Pressao Snaguinea", R.drawable.dic_blood_pressure, "Medicao"));
+        medicalTerm.add(new Dictionary("Soro", R.drawable.dic_bottle, "Medicamento"));
+        medicalTerm.add(new Dictionary("Viagra", R.drawable.dic_capsule, "Medicamento"));
+        medicalTerm.add(new Dictionary("Socorrista de gatos", R.drawable.dic_nurse, "Especialidade"));
+        medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope, "Instrumento"));
 
     }
 
