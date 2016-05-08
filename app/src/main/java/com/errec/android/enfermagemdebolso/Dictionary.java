@@ -1,10 +1,10 @@
 package com.errec.android.enfermagemdebolso;
 
-    public class Dictionary {
+public class Dictionary {
 
-        private String name;
-        private int iconID;
-        private String category;
+    private String name;
+    private int iconID;
+    private String category;
 
     public Dictionary(String name, int iconID, String category) {
 

@@ -27,12 +27,12 @@ public class MedicalDictionary extends AppCompatActivity {
 
     private void populateDictionaryList() {
 
-        medicalTerm.add(new Dictionary("Bandaid 5000", R.drawable.dic_bandaid,"Curativo"));
-        medicalTerm.add(new Dictionary("Pressao Snaguinea", R.drawable.dic_blood_pressure,"Medicao"));
-        medicalTerm.add(new Dictionary("Soro", R.drawable.dic_bottle,"Medicamento"));
-        medicalTerm.add(new Dictionary("Viagra", R.drawable.dic_capsule,"Medicamento"));
-        medicalTerm.add(new Dictionary("Socorrista de gatos", R.drawable.dic_nurse,"Especialidade"));
-        medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope,"Instrumento"));
+        medicalTerm.add(new Dictionary("Bandaid 5000", R.drawable.dic_bandaid, "Curativo"));
+        medicalTerm.add(new Dictionary("Pressao Snaguinea", R.drawable.dic_blood_pressure, "Medicao"));
+        medicalTerm.add(new Dictionary("Soro", R.drawable.dic_bottle, "Medicamento"));
+        medicalTerm.add(new Dictionary("Viagra", R.drawable.dic_capsule, "Medicamento"));
+        medicalTerm.add(new Dictionary("Socorrista de gatos", R.drawable.dic_nurse, "Especialidade"));
+        medicalTerm.add(new Dictionary("Estetpscopio", R.drawable.dic_sthetoscope, "Instrumento"));
         medicalTerm.add(new Dictionary("Bandaid 5000", R.drawable.dic_bandaid, "Curativo"));
         medicalTerm.add(new Dictionary("Pressao Snaguinea", R.drawable.dic_blood_pressure, "Medicao"));
         medicalTerm.add(new Dictionary("Soro", R.drawable.dic_bottle, "Medicamento"));
@@ -67,14 +67,14 @@ public class MedicalDictionary extends AppCompatActivity {
 
     }
 
-    private void populateListView(){
+    private void populateListView() {
         ArrayAdapter<Dictionary> adapter = new listAdapter();
         ListView list = (ListView) findViewById(R.id.dictionaryListView);
         list.setAdapter(adapter);
 
     }
 
-    private class listAdapter extends ArrayAdapter<Dictionary>{
+    private class listAdapter extends ArrayAdapter<Dictionary> {
         public listAdapter() {
             super(MedicalDictionary.this, R.layout.item_view, medicalTerm);
         }
@@ -84,7 +84,7 @@ public class MedicalDictionary extends AppCompatActivity {
             View itemView = convertView;
 
             //garantir que nao seja null e que sempre exista uma view para ser inserida
-            if(itemView == null){
+            if (itemView == null) {
                 itemView = getLayoutInflater().inflate(R.layout.item_view, parent, false);
             }
 
@@ -92,7 +92,7 @@ public class MedicalDictionary extends AppCompatActivity {
             Dictionary currentMedicalTerm = medicalTerm.get(position);
 
             //preencher a view
-            ImageView imageView = (ImageView)itemView.findViewById(R.id.item_imgIconID);
+            ImageView imageView = (ImageView) itemView.findViewById(R.id.item_imgIconID);
             imageView.setImageResource(currentMedicalTerm.getIconID());
 
             TextView nameText = (TextView) itemView.findViewById(R.id.item_txtName);
