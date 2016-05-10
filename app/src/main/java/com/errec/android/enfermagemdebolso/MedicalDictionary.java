@@ -71,7 +71,6 @@ public class MedicalDictionary extends AppCompatActivity {
         ArrayAdapter<Dictionary> adapter = new listAdapter();
         ListView list = (ListView) findViewById(R.id.dictionaryListView);
         list.setAdapter(adapter);
-
     }
 
     private class listAdapter extends ArrayAdapter<Dictionary> {

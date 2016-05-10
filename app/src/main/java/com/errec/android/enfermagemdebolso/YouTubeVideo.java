@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +25,6 @@ import java.util.Map;
 
 import io.fabric.sdk.android.Fabric;
 
-
 public class YouTubeVideo extends AppCompatActivity {
 
     private List<Video> MyVideo = new ArrayList<Video>();
@@ -31,8 +32,8 @@ public class YouTubeVideo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_you_tube_video);
         Fabric.with(this, new Crashlytics());
-        setContentView(R.layout.activity_youtube_video);
 
         //Check for any issues
         final YouTubeInitializationResult result = YouTubeApiServiceUtil.isYouTubeApiServiceAvailable(this);
@@ -43,6 +44,7 @@ public class YouTubeVideo extends AppCompatActivity {
         }
 
         populateVideoList();
+        populateListView();
 
 
     }
@@ -57,24 +59,11 @@ public class YouTubeVideo extends AppCompatActivity {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    private void populateListView() {
+        ArrayAdapter<Video> adapter = new VideoListAdapter();
+        ListView list = (ListView) findViewById(R.id.videoListView);
+        list.setAdapter(adapter);
+    }
 
 
 
