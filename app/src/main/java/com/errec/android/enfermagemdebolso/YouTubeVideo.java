@@ -1,4 +1,4 @@
-package com.eden.youtubesample;
+package com.errec.android.enfermagemdebolso;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.eden.youtubesample.content.YouTubeContent;
 import com.google.android.youtube.player.YouTubeThumbnailLoader;
 import com.google.android.youtube.player.YouTubeThumbnailView;
 
