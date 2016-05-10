@@ -20,7 +20,8 @@
         <activity android:name=".Quiz" />
         <activity android:name=".News" />
         <activity android:name=".Legis" />
-        <activity android:name=".YoutubeVideo"></activity>
+        <activity android:name=".YoutubeVideo" />
+        <activity android:name=".YouTubeVideo"></activity>
     </application>
 
 </manifest>
