@@ -1,6 +1,8 @@
 package com.errec.android.enfermagemdebolso;
 
 import android.content.Context;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,24 +10,23 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.crashlytics.android.Crashlytics;
+import com.google.android.youtube.player.YouTubeApiServiceUtil;
+import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubeThumbnailLoader;
 import com.google.android.youtube.player.YouTubeThumbnailView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
-import com.crashlytics.android.Crashlytics;
-import com.errec.android.enfermagemdebolso.R;
-import com.google.android.youtube.player.YouTubeApiServiceUtil;
-import com.google.android.youtube.player.YouTubeInitializationResult;
 
 import io.fabric.sdk.android.Fabric;
 
 
 public class YouTubeVideo extends AppCompatActivity {
+
+    private List<Video> MyVideo = new ArrayList<Video>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,44 @@ public class YouTubeVideo extends AppCompatActivity {
             //If there are any issues we can show an error dialog.
             result.getErrorDialog(this, 0).show();
         }
+
+        populateVideoList();
+
+
     }
+
+    private void populateVideoList() {
+
+        MyVideo.add(new Video("tttG6SdnCd4", "Open in the YouTube App"));
+        MyVideo.add(new Video("x-hH_Txxzls", "Open in the YouTube App in fullscreen"));
+        MyVideo.add(new Video("TTh_qYMzSZk", "Open in the Standalone player in fullscreen"));
+        MyVideo.add(new Video("tttG6SdnCd4", "Open in the Standalone player in \"Light Box\" mode"));
+        MyVideo.add(new Video("x-hH_Txxzls", "Open in the YouTubeFragment"));
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     private class VideoListAdapter extends BaseAdapter implements YouTubeThumbnailView.OnInitializedListener {
 
