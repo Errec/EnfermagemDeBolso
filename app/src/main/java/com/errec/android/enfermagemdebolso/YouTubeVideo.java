@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +29,10 @@ import io.fabric.sdk.android.Fabric;
 public class YouTubeVideo extends AppCompatActivity {
 
     private List<Video> MyVideo = new ArrayList<Video>();
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +69,81 @@ public class YouTubeVideo extends AppCompatActivity {
         ListView list = (ListView) findViewById(R.id.videoListView);
         list.setAdapter(adapter);
     }
+
+
+    private class VideoListAdapter extends ArrayAdapter<YouTubeVideo> {
+        public VideoListAdapter(final Context context) {
+            super(YouTubeVideo.this, R.layout.video_view, MyVideo);
+        }
+
+/*
+        private Context mContext;
+        private Map<View, YouTubeThumbnailLoader> mLoaders;
+
+        public VideoListAdapter(final Context context) {
+            mContext = context;
+            mLoaders = new HashMap<>();
+        }
+*/
+
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View itemView = convertView;
+
+            //garantir que nao seja null e que sempre exista uma view para ser inserida
+            if (itemView == null) {
+                //Create the row
+                final LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                itemView = inflater.inflate(R.layout.video_view, parent, false);
+
+                //Create the video holder
+                holder = new VideoHolder();
+
+                //Set the title
+                holder.title = (TextView) itemView.findViewById(R.id.textView_title);
+                holder.title.setText(currentVideo.getVideoTitle());
+
+                //Initialise the thumbnail
+                holder.thumb = (YouTubeThumbnailView) itemView.findViewById(R.id.imageView_thumbnail);
+                holder.thumb.setTag(currentVideo.getVideoId());
+                holder.thumb.initialize(mContext.getString(R.string.DEVELOPER_KEY), this);
+
+                itemView.setTag(holder);
+            } else {
+                //Create it again
+                holder = (VideoHolder) itemView.getTag();
+                final YouTubeThumbnailLoader loader = mLoaders.get(holder.thumb);
+
+
+
+
+/*            if (itemView == null) {
+                itemView = getLayoutInflater().inflate(R.layout.video_view, parent, false);
+            }*/
+
+            // encontrar o objeto a ser inserido
+            Video currentVideo = MyVideo.get(position);
+
+            //preencher a view
+            TextView IDText = (TextView) itemView.findViewById(R.id.item_txtName); //TODO
+            IDText.setText(currentVideo.getVideoId());
+
+            TextView titleText = (TextView) itemView.findViewById(R.id.item_txtName); //TODO
+            titleText.setText(currentVideo.getVideoTitle());
+
+            return itemView;
+        }
+    }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,7 +186,7 @@ public class YouTubeVideo extends AppCompatActivity {
             if (currentRow == null) {
                 //Create the row
                 final LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                currentRow = inflater.inflate(R.layout.row_layout, parent, false);
+                currentRow = inflater.inflate(R.layout.video_view, parent, false);
 
                 //Create the video holder
                 holder = new VideoHolder();
