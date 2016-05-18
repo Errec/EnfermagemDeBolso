@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,15 +25,11 @@ import java.util.Map;
 
 import io.fabric.sdk.android.Fabric;
 
+
 public class YouTubeVideo extends AppCompatActivity {
 
     public static List<Video> MyVideo = new ArrayList<Video>();
     public static Map<String, Video> Video_Map = new HashMap<>();
-
-    private static void addItem(final YouTubeVideo item) {
-        MyVideo.add(item);
-        Video_Map.put(item.videoID, item);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +57,11 @@ public class YouTubeVideo extends AppCompatActivity {
         addItem(new Video("x-hH_Txxzls", "Open in the YouTubeFragment"));
     }
 
+    private static void addItem(final Video currentVideo) {
+        MyVideo.add(currentVideo);
+        Video_Map.put(currentVideo.getVideoId(), currentVideo);
+    }
+
     private void populateListView() {
         ArrayAdapter<Video> adapter = new VideoListAdapter();
         ListView list = (ListView) findViewById(R.id.videoListView);
@@ -76,10 +76,6 @@ public class YouTubeVideo extends AppCompatActivity {
         public VideoListAdapter(final Context context) {
             mContext = context;
             mLoaders = new HashMap<>();
-        }
-
-        public VideoListAdapter(final Context context) {
-            super(YouTubeVideo.this, R.layout.video_view, MyVideo);
         }
 
         @Override
@@ -100,39 +96,38 @@ public class YouTubeVideo extends AppCompatActivity {
         //------------------------------------------------------------------------------------------------------------------- 13/05/16
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            View itemView = convertView;
+            View videoRow = convertView;
 
-            View currentRow = convertView;
             VideoHolder holder;
 
-            Video currentVideo = MyVideo.get(position);
+            final Video currentVideo = MyVideo.get(position);
 
             //garantir que nao seja null e que sempre exista uma view para ser inserida
-            if (itemView == null) {
+            if (videoRow == null) {
                 //Create the row
                 final LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                itemView = inflater.inflate(R.layout.video_view, parent, false);
+                videoRow = inflater.inflate(R.layout.video_view, parent, false);
 
                 //Create the video holder
                 holder = new VideoHolder();
 
                 //Set the title
-                holder.title = (TextView) itemView.findViewById(R.id.textView_title);
+                holder.title = (TextView) videoRow.findViewById(R.id.textView_title);
                 holder.title.setText(currentVideo.getVideoTitle());
 
                 //Initialise the thumbnail
-                holder.thumb = (YouTubeThumbnailView) itemView.findViewById(R.id.imageView_thumbnail);
+                holder.thumb = (YouTubeThumbnailView) videoRow.findViewById(R.id.imageView_thumbnail);
                 holder.thumb.setTag(currentVideo.getVideoId());
                 holder.thumb.initialize(mContext.getString(R.string.DEVELOPER_KEY), this);
 
-                itemView.setTag(holder);
+                videoRow.setTag(holder);
             } else {
                 //Create it again
-                holder = (VideoHolder) itemView.getTag();
+                holder = (VideoHolder) videoRow.getTag();
                 final YouTubeThumbnailLoader loader = mLoaders.get(holder.thumb);
 
                 //Set the title
-                if (item != null) {
+                if (currentVideo != null) {
                     holder.title.setText(currentVideo.getVideoTitle());
 
                     if (loader == null) {
@@ -144,7 +139,7 @@ public class YouTubeVideo extends AppCompatActivity {
                     }
                 }
             }
-            return itemView;
+            return videoRow;
         }
 
         @Override

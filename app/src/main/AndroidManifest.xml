@@ -20,8 +20,14 @@
         <activity android:name=".Quiz" />
         <activity android:name=".News" />
         <activity android:name=".Legis" />
-        <activity android:name=".YoutubeVideo" />
-        <activity android:name=".YouTubeVideo"></activity>
+        <activity android:name=".YouTubeVideo" />
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="AIzaSyD2WpQiwtX2GLnx3_NFwaQrWd8xJQfGAwc" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
