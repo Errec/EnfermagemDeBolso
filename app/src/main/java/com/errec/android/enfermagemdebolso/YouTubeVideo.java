@@ -31,6 +31,11 @@ public class YouTubeVideo extends AppCompatActivity {
     public static List<Video> MyVideo = new ArrayList<Video>();
     public static Map<String, Video> Video_Map = new HashMap<>();
 
+    private static void addItem(final Video currentVideo) {
+        MyVideo.add(currentVideo);
+        Video_Map.put(currentVideo.getVideoId(), currentVideo);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,13 +62,9 @@ public class YouTubeVideo extends AppCompatActivity {
         addItem(new Video("x-hH_Txxzls", "Open in the YouTubeFragment"));
     }
 
-    private static void addItem(final Video currentVideo) {
-        MyVideo.add(currentVideo);
-        Video_Map.put(currentVideo.getVideoId(), currentVideo);
-    }
-
     private void populateListView() {
-        ArrayAdapter<Video> adapter = new VideoListAdapter();
+
+        ArrayAdapter<Video> adapter = new VideoListAdapter(YouTubeVideo.this, R.layout.video_view, MyVideo);
         ListView list = (ListView) findViewById(R.id.videoListView);
         list.setAdapter(adapter);
     }
@@ -102,7 +103,7 @@ public class YouTubeVideo extends AppCompatActivity {
 
             final Video currentVideo = MyVideo.get(position);
 
-            //garantir que nao seja null e que sempre exista uma view para ser inserida
+
             if (videoRow == null) {
                 //Create the row
                 final LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -154,7 +155,7 @@ public class YouTubeVideo extends AppCompatActivity {
             Toast.makeText(mContext, errorMessage, Toast.LENGTH_LONG).show();
         }
 
-        static class VideoHolder {
+        private class VideoHolder {
             YouTubeThumbnailView thumb;
             TextView title;
         }
