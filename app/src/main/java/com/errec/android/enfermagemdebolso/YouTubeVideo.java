@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -64,7 +63,7 @@ public class YouTubeVideo extends AppCompatActivity {
 
     private void populateListView() {
 
-        ArrayAdapter<Video> adapter = new VideoListAdapter(YouTubeVideo.this, R.layout.video_view, MyVideo);
+        VideoListAdapter adapter = new VideoListAdapter(YouTubeVideo.this);
         ListView list = (ListView) findViewById(R.id.videoListView);
         list.setAdapter(adapter);
     }
