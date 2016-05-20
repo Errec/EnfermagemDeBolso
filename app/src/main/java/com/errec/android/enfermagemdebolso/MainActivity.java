@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setupQuizButton();
         setupNewsButton();
         setupLegisButton();
+        setupVideoButton();
     }
 
     private void setupDropCalcButton() {
@@ -70,6 +71,16 @@ public class MainActivity extends AppCompatActivity {
         messageButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Legis.class));
+            }
+        });
+    }
+
+    private void setupVideoButton() {
+
+        ImageButton messageButton = (ImageButton)findViewById(R.id.bt_video);
+        messageButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, YouTubeVideo.class));
             }
         });
     }
