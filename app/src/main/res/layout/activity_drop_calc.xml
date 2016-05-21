@@ -23,17 +23,21 @@
             android:textColor="#FFFFFF"
             android:textSize="22sp" />
 
-        <TextView
+        <EditText
+            android:id="@+id/edittext_volume"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:gravity="bottom|end"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:textSize="26sp"
+            android:gravity="bottom|end"
             android:hint="0.0"
-            android:inputType="numberDecimal"
-            android:textColor="#FFFFFF" />
+
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textCursorDrawable="@null"
+            android:textSize="26sp" />
 
         <TextView
             android:layout_width="0dp"
@@ -62,17 +66,21 @@
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
-        <TextView
+        <EditText
+            android:id="@+id/edittext_time"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:gravity="bottom|end"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:textSize="26sp"
             android:background="#FFFFFF"
+            android:gravity="bottom|end"
             android:hint="0.0"
-            android:inputType="numberDecimal"
-            android:textColor="#FFFFFF" />
+
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textCursorDrawable="@null"
+            android:textSize="26sp" />
 
         <TextView
             android:layout_width="0dp"
@@ -88,7 +96,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="resultado"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -105,6 +117,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="1"
             android:textSize="32dp" />
 
@@ -112,6 +125,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="2"
             android:textSize="32dp" />
 
@@ -119,6 +133,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="3"
             android:textSize="32dp" />
 
@@ -142,6 +157,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="4"
             android:textSize="32dp" />
 
@@ -149,6 +165,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="5"
             android:textSize="32dp" />
 
@@ -156,22 +173,17 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="6"
             android:textSize="32dp" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="del"
-            android:textColor="#d61010"
-            android:textSize="24dp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:text="Reset"
+            android:textColor="#ff0000"
             android:textSize="18dp" />
 
     </LinearLayout>
@@ -186,6 +198,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="7"
             android:textSize="32dp" />
 
@@ -193,6 +206,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="8"
             android:textSize="32dp" />
 
@@ -200,6 +214,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="9"
             android:textSize="32dp" />
 
@@ -207,6 +222,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="0"
             android:textSize="32dp" />
 
@@ -214,6 +230,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="numClicked"
             android:text="."
             android:textSize="32dp" />
 
