@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.errec.android.enfermagemdebolso">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon1"
@@ -21,13 +23,13 @@
         <activity android:name=".News" />
         <activity android:name=".Legis" />
         <activity android:name=".YouTubeVideo" />
-
+        <activity android:name=".PopupView"
+            android:theme="@style/AppTheme.PopupTheme"/>
 
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="9e6988f4dcba61e1725ead446f3932c2e5a6beb2" />
-    </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    </application>
 
 </manifest>

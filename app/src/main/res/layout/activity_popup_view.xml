@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37bfaf"
+    android:orientation="vertical"
+    tools:context="com.errec.android.enfermagemdebolso.PopupView">
+
+
+    <TextView
+        android:id="@+id/popup_headline_Text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="headline"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/popup_body_Text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:paddingLeft="8dp"
+        android:paddingTop="12dp"
+        android:text="body"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>
