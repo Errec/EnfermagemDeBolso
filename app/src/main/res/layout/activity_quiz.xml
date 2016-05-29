@@ -7,6 +7,7 @@
     tools:context=".Quiz">
 
     <TextView
+        android:id="@+id/quiz_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#0037ff"
@@ -30,6 +31,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/quiz_body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FFFF"
@@ -52,7 +54,7 @@
                 android:background="#e1e0e0">
 
                 <RadioButton
-                    android:id="@+id/radioButton1"
+                    android:id="@+id/quiz_radio_Button1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
@@ -66,7 +68,7 @@
                     android:background="#000000" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/quiz_radio_Button2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
@@ -80,7 +82,7 @@
                     android:background="#000000" />
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/quiz_radio_Button3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
@@ -94,7 +96,7 @@
                     android:background="#000000" />
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/quiz_radio_Button4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
@@ -108,7 +110,7 @@
                     android:background="#000000" />
 
                 <RadioButton
-                    android:id="@+id/radioButton5"
+                    android:id="@+id/quiz_radio_Button5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"

@@ -1,7 +1,9 @@
 package com.errec.android.enfermagemdebolso;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,7 +57,28 @@ public class Quiz extends AppCompatActivity {
 
     private void populateView(){
 
-        //TODO
+        Question currentQuestion = myQuestion.get(0);
+
+        TextView headerText = (TextView) findViewById(R.id.quiz_header);
+        headerText.setText(currentQuestion.getQuestionHeader());
+
+        TextView bodyText = (TextView) findViewById(R.id.quiz_body);
+        bodyText.setText(currentQuestion.getQuestionBody());
+
+        RadioButton radioButton1 = (RadioButton) findViewById(R.id.quiz_radio_Button1);
+        radioButton1.setText(currentQuestion.getItem1());
+
+        RadioButton radioButton2 = (RadioButton) findViewById(R.id.quiz_radio_Button2);
+        radioButton2.setText(currentQuestion.getItem2());
+
+        RadioButton radioButton3 = (RadioButton) findViewById(R.id.quiz_radio_Button3);
+        radioButton3.setText(currentQuestion.getItem3());
+
+        RadioButton radioButton4 = (RadioButton) findViewById(R.id.quiz_radio_Button4);
+        radioButton4.setText(currentQuestion.getItem4());
+
+        RadioButton radioButton5 = (RadioButton) findViewById(R.id.quiz_radio_Button5);
+        radioButton5.setText(currentQuestion.getItem5());
 
     }
 
