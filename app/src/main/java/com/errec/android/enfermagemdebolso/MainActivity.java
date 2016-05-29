@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupDropCalcButton() {
-
         ImageButton messageButton = (ImageButton)findViewById(R.id.bt_drop);
         messageButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupDictionaryButton() {
-
         ImageButton messageButton = (ImageButton)findViewById(R.id.bt_dictionary);
         messageButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -46,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupQuizButton() {
-
         ImageButton messageButton = (ImageButton)findViewById(R.id.bt_quiz);
         messageButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -56,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupNewsButton() {
-
         Button messageButton = (Button)findViewById(R.id.bt_news);
         messageButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -66,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupLegisButton() {
-
         ImageButton messageButton = (ImageButton) findViewById(R.id.bt_legis);
         messageButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -76,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupVideoButton() {
-
         ImageButton messageButton = (ImageButton)findViewById(R.id.bt_video);
         messageButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

@@ -30,7 +30,7 @@ public class MedicalDictionary extends AppCompatActivity {
 
         populateDictionaryList();
         populateListView();
-        fragmentOnClick();
+        itemOnClick();
     }
 
     private void populateDictionaryList() {
@@ -55,7 +55,7 @@ public class MedicalDictionary extends AppCompatActivity {
         list.setAdapter(adapter);
     }
 
-    private void fragmentOnClick(){
+    private void itemOnClick(){
 
         ListView list = (ListView) findViewById(R.id.dictionaryListView);
         if(list != null){
@@ -105,19 +105,3 @@ public class MedicalDictionary extends AppCompatActivity {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
