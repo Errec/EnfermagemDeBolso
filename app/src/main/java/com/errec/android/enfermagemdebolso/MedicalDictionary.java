@@ -66,7 +66,7 @@ public class MedicalDictionary extends AppCompatActivity {
 
                 Dictionary clickedTerm = medicalTerm.get(position);
 
-                Intent intent = new Intent(getApplicationContext(), PopupView.class);
+                Intent intent = new Intent(getApplicationContext(), PopupDictionary.class);
                 intent.putExtra(KEY_NAME, clickedTerm.getName());
                 intent.putExtra(KEY_DESCRIPTION, clickedTerm.getDescription());
 

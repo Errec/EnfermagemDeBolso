@@ -9,12 +9,12 @@ import android.widget.TextView;
 import static com.errec.android.enfermagemdebolso.MedicalDictionary.KEY_DESCRIPTION;
 import static com.errec.android.enfermagemdebolso.MedicalDictionary.KEY_NAME;
 
-public class PopupView extends AppCompatActivity {
+public class PopupDictionary extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_popup_view);
+        setContentView(R.layout.activity_popup_dictionary);
 
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);

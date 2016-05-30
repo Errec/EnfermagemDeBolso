@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#37bfaf"
     android:orientation="vertical"
-    tools:context="com.errec.android.enfermagemdebolso.PopupView">
+    tools:context=".PopupDictionary">
 
 
     <TextView

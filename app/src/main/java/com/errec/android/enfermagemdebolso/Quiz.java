@@ -19,6 +19,7 @@ public class Quiz extends AppCompatActivity {
 
         populateQuestionList();
         populateView();
+        buttonAnswer();
     }
 
     private void populateQuestionList() {
@@ -80,6 +81,10 @@ public class Quiz extends AppCompatActivity {
         RadioButton radioButton5 = (RadioButton) findViewById(R.id.quiz_radio_Button5);
         radioButton5.setText(currentQuestion.getItem5());
 
+    }
+
+    private void buttonAnswer() {
+        //TODO
     }
 
 }
