@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -25,7 +26,7 @@ public class Quiz extends AppCompatActivity {
 
         populateQuestionList();
         populateView();
-
+        buttonAnswerOnClick();
     }
 
     private void populateQuestionList() {
@@ -89,25 +90,30 @@ public class Quiz extends AppCompatActivity {
 
     }
 
-    public void buttonAnswerOnClick(View view) {
-        RadioGroup radioGRP = (RadioGroup) findViewById(R.id.questions_RG);
+    private void buttonAnswerOnClick() {
+        Button messageButton = (Button) findViewById(R.id.answer_button);
+        messageButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                RadioGroup radioGRP = (RadioGroup) findViewById(R.id.questions_RG);
 
-        if (radioGRP.getCheckedRadioButtonId() == -1) {
-            Toast.makeText(getApplicationContext(), "Marque uma resposta", Toast.LENGTH_SHORT).show();
-        } else {
-            RadioButton radioAnswer = (RadioButton) findViewById(radioGRP.getCheckedRadioButtonId());
-            Question currentQuestion = myQuestion.get(0);
-            boolean checkAnswer = false;
+                if (radioGRP.getCheckedRadioButtonId() == -1) {
+                    Toast.makeText(getApplicationContext(), "Marque uma resposta", Toast.LENGTH_SHORT).show();
+                } else {
+                    RadioButton radioAnswer = (RadioButton) findViewById(radioGRP.getCheckedRadioButtonId());
+                    Question currentQuestion = myQuestion.get(0);
+                    boolean checkAnswer = false;
 
-            if (currentQuestion.getAnswer().equals(radioAnswer.getText())) {
-                checkAnswer = true;
+                    if (currentQuestion.getAnswer().equals(radioAnswer.getText())) {
+                        checkAnswer = true;
+                    }
+
+                    Intent intent = new Intent(getApplicationContext(), PopupAnswer.class);
+
+                    intent.putExtra(KEY_ANSWER, checkAnswer);
+
+                    startActivity(intent);
+                }
             }
-
-            Intent intent = new Intent(getApplicationContext(), PopupAnswer.class);
-
-            intent.putExtra(KEY_ANSWER, checkAnswer);
-
-            startActivity(intent);
-        }
+        });
     }
 }
