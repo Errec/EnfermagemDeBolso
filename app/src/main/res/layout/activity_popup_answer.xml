@@ -7,6 +7,7 @@
     tools:context="com.errec.android.enfermagemdebolso.PopupAnswer">
 
     <TextView
+        android:id="@+id/popup_answer_text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -15,6 +16,7 @@
         android:textSize="45sp" />
 
     <ImageView
+        android:id="@+id/answer_image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
@@ -29,6 +31,7 @@
         android:textSize="16sp" />
 
     <Button
+        android:id="@+id/next_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="100dp"

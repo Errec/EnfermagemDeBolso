@@ -1,14 +1,20 @@
 package com.errec.android.enfermagemdebolso;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Quiz extends AppCompatActivity {
+
+    public static final String KEY_ANSWER = "check_answer";
 
     private List<Question> myQuestion = new ArrayList<Question>();
 
@@ -19,7 +25,7 @@ public class Quiz extends AppCompatActivity {
 
         populateQuestionList();
         populateView();
-        buttonAnswer();
+
     }
 
     private void populateQuestionList() {
@@ -83,8 +89,25 @@ public class Quiz extends AppCompatActivity {
 
     }
 
-    private void buttonAnswer() {
-        //TODO
-    }
+    public void buttonAnswerOnClick(View view) {
+        RadioGroup radioGRP = (RadioGroup) findViewById(R.id.questions_RG);
 
+        if (radioGRP.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(getApplicationContext(), "Marque uma resposta", Toast.LENGTH_SHORT).show();
+        } else {
+            RadioButton radioAnswer = (RadioButton) findViewById(radioGRP.getCheckedRadioButtonId());
+            Question currentQuestion = myQuestion.get(0);
+            boolean checkAnswer = false;
+
+            if (currentQuestion.getAnswer().equals(radioAnswer.getText())) {
+                checkAnswer = true;
+            }
+
+            Intent intent = new Intent(getApplicationContext(), PopupAnswer.class);
+
+            intent.putExtra(KEY_ANSWER, checkAnswer);
+
+            startActivity(intent);
+        }
+    }
 }

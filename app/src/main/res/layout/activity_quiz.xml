@@ -49,6 +49,7 @@
                 android:background="#000000" />
 
             <RadioGroup
+                android:id="@+id/questions_RG"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#e1e0e0">
@@ -126,6 +127,7 @@
                 android:background="#000000" />
 
             <Button
+                android:id="@+id/answer_button"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:layout_gravity="center"
@@ -133,6 +135,7 @@
                 android:layout_marginTop="20dp"
                 android:background="#489bbc"
                 android:gravity="center"
+                android:onClick="buttonAnswerOnClick"
                 android:paddingLeft="90dp"
                 android:paddingRight="90dp"
                 android:text="Responder"
