@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.List;
 
 public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleViewHolder> {
@@ -26,16 +25,15 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleVie
     @Override
     public ArticleViewHolder onCreateViewHolder(ViewGroup viewGroup, int position) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.news_item_list, viewGroup, false);
-        ArticleViewHolder articleViewHolder = new ArticleViewHolder(v);
-        return articleViewHolder;
+        return new ArticleViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(ArticleViewHolder ArticleViewHolder, int position) {
-        ArticleViewHolder.newsTitle.setText(articles.get(position).getTitle());
-        ArticleViewHolder.newsLink.setText(articles.get(position).getLink());
-        ArticleViewHolder.newsLink.setText(articles.get(position).getBody());
-        ArticleViewHolder.newsPhotoID.setImageResource(articles.get(position).getPhotoId());
+        ArticleViewHolder.articleTitle.setText(articles.get(position).getArticleTitle());
+        ArticleViewHolder.articleLink.setText(articles.get(position).getArticleLink());
+        ArticleViewHolder.articleLink.setText(articles.get(position).getArticleBody());
+        ArticleViewHolder.articlePhotoID.setImageResource(articles.get(position).getArticlePhotoId());
     }
 
     @Override
@@ -46,18 +44,18 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleVie
     public static class ArticleViewHolder extends RecyclerView.ViewHolder {
 
         CardView cv;
-        TextView newsTitle;
-        TextView newsLink;
-        TextView newsBody;
-        ImageView newsPhotoID;
+        TextView articleTitle;
+        TextView articleLink;
+        TextView articleBody;
+        ImageView articlePhotoID;
 
         ArticleViewHolder(View itemView) {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.card1_view);
-            newsTitle = (TextView) itemView.findViewById(R.id.news_title);
-            newsLink = (TextView) itemView.findViewById(R.id.news_link);
-            newsBody = (TextView) itemView.findViewById(R.id.news_body);
-            newsPhotoID = (ImageView) itemView.findViewById(R.id.news_photoId);
+            articleTitle = (TextView) itemView.findViewById(R.id.news_title);
+            articleLink = (TextView) itemView.findViewById(R.id.news_link);
+            articleBody = (TextView) itemView.findViewById(R.id.news_body);
+            articlePhotoID = (ImageView) itemView.findViewById(R.id.news_photoId);
         }
     }
 }

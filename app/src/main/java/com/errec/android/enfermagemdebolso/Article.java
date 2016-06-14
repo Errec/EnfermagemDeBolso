@@ -1,35 +1,32 @@
 package com.errec.android.enfermagemdebolso;
 
-/**
- * Created by ${Raniro} on ${29/04/2016}.
- */
 public class Article {
 
-    private String title;
-    private String link;
-    private String body;
-    private int photoId;
+    private String articleTitle;
+    private String articleLink;
+    private String articleBody;
+    private int articlePhotoId;
 
-    Article(String title, String link, String body, int photoId) {
-        this.title = title;
-        this.link = link;
-        this.body = body;
-        this.photoId = photoId;
+    public Article(String articleTitle, String articleLink, String articleBody, int articlePhotoId) {
+        this.articleTitle = articleTitle;
+        this.articleLink = articleLink;
+        this.articleBody = articleBody;
+        this.articlePhotoId = articlePhotoId;
     }
 
-    public String getTitle() {
-        return title;
+    public String getArticleTitle() {
+        return articleTitle;
     }
 
-    public String getLink() {
-        return link;
+    public String getArticleLink() {
+        return articleLink;
     }
 
-    public String getBody() {
-        return body;
+    public String getArticleBody() {
+        return articleBody;
     }
 
-    public int getPhotoId() {
-        return photoId;
+    public int getArticlePhotoId() {
+        return articlePhotoId;
     }
 }

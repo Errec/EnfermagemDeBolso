@@ -21,7 +21,7 @@ public class MedicalDictionary extends AppCompatActivity {
     public static final String KEY_NAME = "term_name";
     public static final String KEY_DESCRIPTION = "term_description";
 
-    private List<Dictionary> medicalTerm = new ArrayList<Dictionary>();
+    private List<Dictionary> medicalTerm = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

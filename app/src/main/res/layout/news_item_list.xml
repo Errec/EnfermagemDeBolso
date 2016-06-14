@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".News">
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:id="@+id/card1_view"
@@ -21,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingLeft="8dp"
-                android:text="Forum mineiro se prepara para o dia nacinal da valorizaçào dos enfermeiros braçudos"
+                android:text="articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle articleTitle "
                 android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -43,14 +45,14 @@
                         android:layout_height="25dp"
                         android:gravity="center_vertical"
                         android:paddingLeft="8dp"
-                        android:text="http://www.corenmg.gov.br/" />
+                        android:text="http://www.articleLink.com/" />
 
                     <TextView
                         android:id="@+id/news_body"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:paddingLeft="8dp"
-                        android:text="A Enfermagem representa maior contingente da força de trabalho do Sistema Único de Saúde (SUS), mas ainda é necessário sensibilizar seus usuários e trabalhadores na luta pela regulamentação da..."
+                        android:text="Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body ..."
                         android:textColor="#000000" />
                 </LinearLayout>
 
@@ -69,7 +71,7 @@
                 android:gravity="end"
                 android:paddingEnd="6dp"
                 android:paddingRight="6dp"
-                android:text="Comentarios    Compartilhar" />
+                android:text="Coments    Share" />
 
             <TextView
                 android:layout_width="match_parent"
