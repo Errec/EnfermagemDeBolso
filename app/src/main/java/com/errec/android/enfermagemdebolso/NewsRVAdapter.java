@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.List;
 
 public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleViewHolder> {
@@ -32,7 +34,7 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleVie
     public void onBindViewHolder(ArticleViewHolder ArticleViewHolder, int position) {
         ArticleViewHolder.articleTitle.setText(articles.get(position).getArticleTitle());
         ArticleViewHolder.articleLink.setText(articles.get(position).getArticleLink());
-        ArticleViewHolder.articleLink.setText(articles.get(position).getArticleBody());
+        ArticleViewHolder.articleBody.setText(articles.get(position).getArticleBody());
         ArticleViewHolder.articlePhotoID.setImageResource(articles.get(position).getArticlePhotoId());
     }
 
@@ -41,7 +43,7 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleVie
         return articles.size();
     }
 
-    public static class ArticleViewHolder extends RecyclerView.ViewHolder {
+    public static class ArticleViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         CardView cv;
         TextView articleTitle;
@@ -56,6 +58,22 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleVie
             articleLink = (TextView) itemView.findViewById(R.id.news_link);
             articleBody = (TextView) itemView.findViewById(R.id.news_body);
             articlePhotoID = (ImageView) itemView.findViewById(R.id.news_photoId);
+
+            articleBody.setOnClickListener(this);
+            articlePhotoID.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+
+            if (v.getId() == articleBody.getId()) {
+                Toast.makeText(v.getContext(), "Body Clicked!", Toast.LENGTH_LONG).show();
+            } else if (v.getId() == articlePhotoID.getId()) {
+                Toast.makeText(v.getContext(), "Image Clicked!", Toast.LENGTH_LONG).show();
+            }
+
         }
     }
+
+
 }
