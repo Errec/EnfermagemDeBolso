@@ -60,20 +60,16 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleVie
             articlePhotoID = (ImageView) itemView.findViewById(R.id.news_photoId);
 
             articleBody.setOnClickListener(this);
-            articlePhotoID.setOnClickListener(this);
+            articleLink.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
-
             if (v.getId() == articleBody.getId()) {
                 Toast.makeText(v.getContext(), "Body Clicked!", Toast.LENGTH_LONG).show();
-            } else if (v.getId() == articlePhotoID.getId()) {
-                Toast.makeText(v.getContext(), "Image Clicked!", Toast.LENGTH_LONG).show();
+            } else if (v.getId() == articleLink.getId()) {
+                Toast.makeText(v.getContext(), "Open link!", Toast.LENGTH_LONG).show();
             }
-
         }
     }
-
-
 }

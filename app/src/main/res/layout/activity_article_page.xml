@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.errec.android.enfermagemdebolso.ArticlePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/enfnoticias" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="TITLE TITLE TILE TITLE TITLE TITLE TITLE TITLE TITLE"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="3 hours ago" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Font: www.link.com"
+                android:textColor="#ff0000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="          Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body
+Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body
+Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body
+Body Body Body Body Body Body Body Body Body Body Body Body Body Body " />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/article_footer"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/article_footer"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="4dp"
+        android:text="Coments    share        read the original here" />
+
+</RelativeLayout>
+

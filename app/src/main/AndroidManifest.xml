@@ -31,7 +31,8 @@
             android:name="io.fabric.ApiKey"
             android:value="9e6988f4dcba61e1725ead446f3932c2e5a6beb2" />
 
-        <activity android:name=".PopupAnswer"></activity>
+        <activity android:name=".PopupAnswer" />
+        <activity android:name=".ArticlePage"></activity>
     </application>
 
 </manifest>
