@@ -18,6 +18,7 @@
             android:src="@drawable/enfnoticias" />
 
         <TextView
+            android:id="@+id/article_page_title"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:text="TITLE TITLE TILE TITLE TITLE TITLE TITLE TITLE TITLE"
