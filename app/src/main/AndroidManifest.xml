@@ -25,12 +25,16 @@
         <activity android:name=".YouTubeVideo" />
         <activity android:name=".PopupAnswer" />
         <activity android:name=".ArticlePage" />
+        <activity android:name=".PDF" />
         <activity
             android:name=".PopupDictionary"
             android:theme="@style/AppTheme.PopupTheme" />
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="9e6988f4dcba61e1725ead446f3932c2e5a6beb2" />
+
+
     </application>
 
 </manifest>

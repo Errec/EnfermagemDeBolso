@@ -24,7 +24,7 @@
             android:padding="8dp">
 
             <ImageView
-
+                android:id="@+id/pdf_image_PNAB"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:layout_marginBottom="8dp"
@@ -38,7 +38,7 @@
                 android:orientation="vertical">
 
                 <TextView
-
+                    android:id="@+id/pdf_text_PNAB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
@@ -46,7 +46,7 @@
                     android:text="Política Nacional de Atenção Básica"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#FFFF"
-                    android:textIsSelectable="true"
+                    android:textIsSelectable="false"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -85,7 +85,6 @@
                     android:text="Política Nacional de Alimentação e Nutrição"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#FFFF"
-                    android:textIsSelectable="true"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -133,7 +132,6 @@
                     android:text="Política Nacional de Práticas Integrativas e Complementares no SUS "
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#FFFF"
-                    android:textIsSelectable="true"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -172,7 +170,6 @@
                     android:text="Diretrizes da política nacional de saúde bucal"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:textColor="#FFFF"
-                    android:textIsSelectable="true"
                     android:textSize="16sp" />
             </LinearLayout>
 
