@@ -50,3 +50,5 @@ public class Legis extends AppCompatActivity {
 
 
 }
+
+//TODO: arraylist string of links

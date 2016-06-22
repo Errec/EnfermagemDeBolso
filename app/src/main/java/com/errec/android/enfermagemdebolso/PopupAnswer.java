@@ -34,3 +34,4 @@ public class PopupAnswer extends AppCompatActivity {
 
     }
 }
+//TODO: adjust image, give next bottom a function, review question on click

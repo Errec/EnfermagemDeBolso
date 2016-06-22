@@ -161,3 +161,6 @@ public class YouTubeVideo extends AppCompatActivity {
 
     }
 }
+
+// TODO: remove initialization bug - increases the list every call
+// TODO: create on click method

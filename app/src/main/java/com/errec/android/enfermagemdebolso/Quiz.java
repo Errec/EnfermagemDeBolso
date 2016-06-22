@@ -117,3 +117,5 @@ public class Quiz extends AppCompatActivity {
         });
     }
 }
+
+//TODO: radio bottom with 4 items , create next bottom for "used" questions, leave activity function?

@@ -72,3 +72,5 @@ public class DropCalc extends AppCompatActivity {
     }
 
 }
+
+//TODO: point exception usage, result number simplification, blinking pointer, setup the time constant

@@ -34,7 +34,6 @@ public class News extends AppCompatActivity {
         articles.add(new Article("5title", "5link", "5body", R.drawable.enfnotum));
         articles.add(new Article("6title", "6link", "6body", R.drawable.image3));
         articles.add(new Article("7title", "7link", "7body", R.drawable.enfnoticias));
-        //TODO: database
     }
 
     private void initializeAdapter() {
@@ -42,3 +41,4 @@ public class News extends AppCompatActivity {
         rv.setAdapter(adapter);
     }
 }
+//TODO: database

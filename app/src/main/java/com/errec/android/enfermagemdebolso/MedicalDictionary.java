@@ -105,3 +105,5 @@ public class MedicalDictionary extends AppCompatActivity {
     }
 
 }
+
+//TODO: database

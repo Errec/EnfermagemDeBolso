@@ -41,3 +41,4 @@ public class PopupDictionary extends AppCompatActivity {
 
     }
 }
+//TODO: icon on top?

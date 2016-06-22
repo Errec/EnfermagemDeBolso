@@ -27,3 +27,5 @@ public class ArticlePage extends AppCompatActivity {
         ArticlePageTitle.setText(title);
     }
 }
+
+//TODO: set source link text, body text, image, share button, comment button,  collapsing layout
