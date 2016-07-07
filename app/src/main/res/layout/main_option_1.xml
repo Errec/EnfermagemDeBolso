@@ -5,24 +5,50 @@
     android:orientation="vertical">
 
     <TextView
+        style="@android:style/TextAppearance.Large"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.2"
-        android:background="#FFF000"
-        android:text="TITLE " />
+        android:layout_weight="0.7"
+        android:background="#AEE239"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="bottom"
+        android:paddingLeft="16dp"
+        android:text="Enfermagem"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#8FBE00"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="top"
+        android:paddingLeft="16dp"
+        android:text="Acesso \n      central"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:src="@drawable/temp01"
         android:layout_weight="3.3"
+        android:scaleType="centerCrop"
         android:background="#000000" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#FFAAAA"
-        android:text="description" />
+        android:paddingLeft="16dp"
+        android:textColor="#000000"
+        android:paddingTop="8dp"
+        android:textStyle="bold"
+        android:paddingRight="16dp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:background="#F9F2E7"
+        android:text="Consulta Pública - Ampliação da faixa etária para doação de sangue" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,22 +91,24 @@
 
             <ImageView
                 android:layout_width="fill_parent"
+                android:src="@drawable/temp02"
+                android:scaleType="centerCrop"
                 android:layout_height="fill_parent" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginBottom="60dp"
-                android:background="#000"
+                android:layout_marginBottom="40dp"
+                android:background="#F9F2E7"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="title title"
-                    android:textColor="#FFF"
+                    android:text="Florence Nightingale"
+                    android:textColor="#000"
                     android:textIsSelectable="false"
                     android:textSize="16sp" />
             </LinearLayout>
