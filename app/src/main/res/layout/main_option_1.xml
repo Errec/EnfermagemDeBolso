@@ -9,23 +9,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.7"
-        android:background="#AEE239"
+        android:background="#53b2fd"
         android:fontFamily="sans-serif-thin"
         android:gravity="bottom"
         android:paddingLeft="16dp"
-        android:text="Enfermagem"
+        android:text="E n f e r m a g e m"
         android:textAllCaps="true"
         android:textColor="#000000" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.7"
-        android:background="#8FBE00"
+        android:layout_height="wrap_content"
+        android:background="#90caf9"
         android:fontFamily="sans-serif-medium"
         android:gravity="top"
+        android:paddingBottom="4dp"
         android:paddingLeft="16dp"
-        android:text="Acesso \n      central"
+        android:text="Acesso central"
         android:textAllCaps="true"
         android:textColor="#000000" />
 
@@ -87,14 +87,15 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#70000000"
+                        android:gravity="end|center"
+                        android:paddingRight="16dp"
                         android:text="Termos\ntécnicos"
-                        android:background="#99000000"
-                        android:gravity="start|center"
-                        android:paddingLeft="8dp"
-                        android:textColor="#f5f5f5"
                         android:textAllCaps="true"
+                        android:textColor="#f5f5f5"
                         android:textIsSelectable="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </FrameLayout>
@@ -119,14 +120,15 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#70000000"
+                        android:gravity="end|center"
+                        android:paddingRight="16dp"
                         android:text="Cálculos e\ntabelas"
-                        android:background="#99000000"
-                        android:gravity="start|center"
-                        android:paddingLeft="8dp"
-                        android:textColor="#f5f5f5"
                         android:textAllCaps="true"
+                        android:textColor="#f5f5f5"
                         android:textIsSelectable="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </FrameLayout>
@@ -151,14 +153,57 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#70000000"
+                        android:gravity="end|center"
+                        android:paddingRight="16dp"
                         android:text="Simulados"
-                        android:background="#99000000"
-                        android:gravity="start|center"
-                        android:paddingLeft="8dp"
-                        android:textColor="#f5f5f5"
                         android:textAllCaps="true"
+                        android:textColor="#f5f5f5"
                         android:textIsSelectable="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/temp02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#70000000"
+                        android:gravity="end|center"
+                        android:paddingRight="16dp"
+                        android:text="História da\nenfermagem"
+                        android:textAllCaps="true"
+                        android:textColor="#f5f5f5"
+                        android:textIsSelectable="false"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </FrameLayout>
@@ -183,14 +228,15 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#70000000"
+                        android:gravity="end|center"
+                        android:paddingRight="16dp"
                         android:text="videos"
-                        android:background="#99000000"
-                        android:gravity="start|center"
-                        android:paddingLeft="8dp"
-                        android:textColor="#f5f5f5"
                         android:textAllCaps="true"
+                        android:textColor="#f5f5f5"
                         android:textIsSelectable="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </FrameLayout>
@@ -215,14 +261,15 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#70000000"
+                        android:gravity="end|center"
+                        android:paddingRight="16dp"
                         android:text="Legislação e\nSaúde"
-                        android:background="#99000000"
-                        android:gravity="start|center"
-                        android:paddingLeft="8dp"
-                        android:textColor="#f5f5f5"
                         android:textAllCaps="true"
+                        android:textColor="#f5f5f5"
                         android:textIsSelectable="false"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </FrameLayout>
@@ -230,38 +277,6 @@
 
         </LinearLayout>
 
-        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="5">
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/temp02" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginBottom="40dp"
-                android:background="#99000000"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="Florence Nightingale"
-                    android:textColor="#f5f5f5"
-                    android:textStyle="bold"
-                    android:textIsSelectable="false"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-
-        </FrameLayout>
 
     </LinearLayout>
 
