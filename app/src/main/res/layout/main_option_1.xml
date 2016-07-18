@@ -76,7 +76,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/tempBT01" />
+                    android:src="@drawable/temp_bt01" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -109,7 +109,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/tempBT02" />
+                    android:src="@drawable/temp_bt02" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -142,7 +142,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/tempBT03" />
+                    android:src="@drawable/temp_bt03" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -217,7 +217,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/tempBT04" />
+                    android:src="@drawable/temp_bt04" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -250,7 +250,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/tempBT05" />
+                    android:src="@drawable/temp_bt05" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
