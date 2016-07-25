@@ -8,32 +8,17 @@
         style="@android:style/TextAppearance.Large"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:background="#53b2fd"
-        android:fontFamily="sans-serif-thin"
-        android:gravity="bottom"
-        android:paddingLeft="16dp"
-        android:text="E n f e r m a g e m"
-        android:textAllCaps="true"
-        android:textColor="#000000" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:background="#90caf9"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="top"
-        android:paddingBottom="4dp"
-        android:paddingLeft="16dp"
-        android:text="Acesso central"
-        android:textAllCaps="true"
-        android:textColor="#000000" />
+        android:layout_weight="0.8"
+        android:background="#003ba9"
+        android:fontFamily="sans-serif-bold"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="EnfermagemApp"
+        android:textColor="#FFF" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.3"
+        android:layout_weight="4"
         android:background="#000000"
         android:scaleType="centerCrop"
         android:src="@drawable/temp01" />
@@ -42,7 +27,7 @@
         style="@android:style/TextAppearance.DeviceDefault.Medium"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="1.2"
         android:background="#f5f5f5"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
@@ -55,5 +40,102 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_drop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:background="#FDFDFE"
+                android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:scaleType="fitCenter"
+                android:src="@drawable/style2bt1" />
+
+            <ImageButton
+                android:id="@+id/bt_drop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:background="#FDFDFE"
+                android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:scaleType="fitCenter"
+                android:src="@drawable/style2bt2" />
+
+            <ImageButton
+                android:id="@+id/bt_drop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:background="#FDFDFE"
+                android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:scaleType="fitCenter"
+                android:src="@drawable/style2bt3" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_drop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:background="#FDFDFE"
+                android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:scaleType="fitCenter"
+                android:src="@drawable/style2bt4" />
+
+            <ImageButton
+                android:id="@+id/bt_drop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:background="#FDFDFE"
+                android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:scaleType="fitCenter"
+                android:src="@drawable/style2bt5" />
+
+            <ImageButton
+                android:id="@+id/bt_drop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="4dp"
+                android:adjustViewBounds="true"
+                android:background="#FDFDFE"
+                android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:scaleType="fitCenter"
+                android:src="@drawable/style2bt6" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
