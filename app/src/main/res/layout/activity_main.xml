@@ -1,274 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDFDFE"
-    android:orientation="vertical"
-    tools:context="com.errec.android.enfermagemdebolso.MainActivity">
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/bt_news"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.5"
-        android:background="@drawable/image3"
-        android:cropToPadding="true"
-        android:onClick="setupNewsButton"
-        android:text="testando um dois tres" />
-
-    <LinearLayout
+    <TextView
+        style="@android:style/TextAppearance.Large"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:paddingLeft="16dp"
+        android:background="#5587da"
+        android:fontFamily="sans-serif-bold"
+        android:gravity="center_horizontal|center_vertical"
+        android:textStyle="bold"
+        android:text="Enf+"
+        android:textSize="30sp"
+        android:textColor="#f5f2f2" />
 
-        <ImageButton
-            android:id="@+id/bt_video"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:cropToPadding="true"
-            android:src="@drawable/image1" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:id="@+id/bt_news"
+        android:background="#000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/temp01" />
 
-        <ImageButton
-            android:id="@+id/bt_legis"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="6"
-            android:cropToPadding="true"
-            android:src="@drawable/image2" />
+    <TextView
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="#f5f5f5"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="Consulta Pública - Ampliação da faixa etária para doação de sangue"
+        android:textColor="#000"
+        android:textStyle="bold" />
 
-    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="5"
+        android:background="#FDFDFE"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="4dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/bt_drop"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="#FDFDFE"
-                android:cropToPadding="true"
-                android:onClick="setupDropCalcButton"
-                android:scaleType="fitCenter"
-                android:src="@drawable/bt1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Gotejamento"
-                android:textAllCaps="true" />
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="1dp"
-                android:layout_gravity="center"
-                android:background="#000000" />
-
-            <ImageButton
-                android:id="@+id/bt_dictionary"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="#FDFDFE"
-                android:cropToPadding="true"
-                android:onClick="setupDictionaryButton"
-                android:scaleType="fitCenter"
-                android:src="@drawable/bt2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Dicionario"
-                android:textAllCaps="true" />
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="1dp"
-                android:layout_gravity="center"
-                android:background="#000000" />
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="#FDFDFE"
-                android:cropToPadding="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/bt3" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Botao 1" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_margin="4dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/bt_quiz"
-                android:layout_width="match_parent"
+                android:layout_width="75dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
-                android:onClick="setupQuizButton"
+                android:onClick="setupDropCalcButton"
+                android:padding="4dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bt4" />
+                android:src="@drawable/style2bt1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Quiz"
-                android:textAllCaps="true" />
+                android:layout_marginBottom="12dp"
+                android:text="simulados"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_gravity="center"
-                android:background="#000000" />
+                android:background="#000"/>
 
             <ImageButton
-                android:layout_width="match_parent"
+                android:id="@+id/bt_dictionary"
+                android:layout_width="75dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:padding="4dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bt5" />
+                android:src="@drawable/style2bt2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Botao 5" />
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="1dp"
-                android:layout_gravity="center"
-                android:background="#000000" />
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:background="#FDFDFE"
-                android:cropToPadding="true"
-                android:scaleType="fitCenter"
-                android:src="@drawable/bt6" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Botao 6" />
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="dicionário técnico"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000"/>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="4dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="match_parent"
+                android:id="@+id/bt_video"
+                android:layout_width="75dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:padding="4dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bt7" />
+                android:src="@drawable/style2bt4" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Botao 7" />
+                android:layout_marginBottom="12dp"
+                android:text="vídeos"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_width="100dp"
+                android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_gravity="center"
-                android:background="#000000" />
+                android:background="#000"/>
 
             <ImageButton
-                android:layout_width="match_parent"
+                android:id="@+id/bt_drop"
+                android:layout_width="75dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:padding="4dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bt8" />
+                android:src="@drawable/style2bt5" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Botao 8" />
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="cálculo de medicação"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="1dp"
-                android:layout_gravity="center"
-                android:background="#000000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <ImageButton
-                android:layout_width="match_parent"
+                android:id="@+id/bt_legis"
+                android:layout_width="75dp"
                 android:layout_height="0dp"
-                android:layout_margin="4dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:background="#FDFDFE"
                 android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:padding="4dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/bt9" />
+                android:src="@drawable/style2bt6" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Botao 9" />
+                android:layout_marginBottom="12dp"
+                android:text="legislação"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+
+            <ImageButton
+                android:id="@+id/bt_history"
+                android:layout_width="75dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#FDFDFE"
+                android:cropToPadding="true"
+                android:onClick="setupDropCalcButton"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/style2bt3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="história da enfermagem"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
