@@ -4,36 +4,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/baseColor"
-    android:padding="28dp"
     android:orientation="vertical"
+    android:padding="28dp"
     tools:context="com.errec.android.enfermagemdebolso.DropCalc">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:padding="8dp"
-        android:layout_marginTop="8dp"
         android:layout_height="0dp"
-        android:background="@color/baseColorLight"
+        android:layout_marginTop="8dp"
         android:layout_weight="0.8"
-        android:orientation="horizontal">
+        android:background="@color/baseColorLight"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/calcDrop" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Quantidade: "
+            android:layout_weight="4"
+            android:gravity="center_vertical|end"
+            android:text="Volume: "
             android:textColor="#000000"
-            android:textSize="22sp" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/edittext_volume"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_weight="1"
             android:layout_marginLeft="8dp"
+            android:layout_weight="4"
             android:background="#FFFFFF"
             android:gravity="bottom|end"
             android:textColor="#000000"
@@ -44,10 +50,10 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
+            android:layout_weight="2.2"
             android:gravity="center"
-            android:textAllCaps="false"
             android:text="ml"
+            android:textAllCaps="false"
             android:textColor="#000000"
             android:textSize="22sp" />
 
@@ -61,16 +67,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/baseColorLight"
         android:layout_weight="0.8"
-        android:padding="8dp"
-        android:orientation="horizontal">
+        android:background="@color/baseColorLight"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleX="0.85"
+            android:scaleY="0.85"
+            android:src="@drawable/calcClock" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_weight="4"
+            android:gravity="center_vertical|end"
             android:text="Tempo: "
             android:textColor="#000000"
             android:textSize="24sp" />
@@ -80,8 +94,8 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_weight="1"
             android:layout_marginLeft="8dp"
+            android:layout_weight="4"
             android:background="#FFFFFF"
             android:gravity="bottom|end"
             android:textColor="#000000"
@@ -92,7 +106,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.5"
+            android:layout_weight="2.2"
             android:gravity="center"
             android:text="h"
             android:textAllCaps="false"
@@ -116,53 +130,53 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#bdbdbd"
+        android:background="@color/baseColorLight"
         android:orientation="horizontal">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="1"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="40sp" />
 
         <Button
 
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="2"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="3"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="2"
+            android:background="#689f38"
             android:onClick="resultClicked"
             android:text="Calcular"
             android:textAllCaps="false"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="#689f38"
             android:textSize="22sp" />
 
     </LinearLayout>
@@ -171,52 +185,52 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#bdbdbd"
+        android:background="@color/baseColorLight"
         android:orientation="horizontal">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="4"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="5"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="6"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="2"
+            android:background="#d32f2f"
             android:onClick="resetClicked"
             android:text="Reset"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="#d32f2f"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -224,63 +238,63 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#bdbdbd"
         android:layout_weight="1"
+        android:background="@color/baseColorLight"
         android:orientation="horizontal">
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="7"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="8"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="9"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="0"
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="@color/baseColorDark"
             android:onClick="numClicked"
             android:text="."
-            android:layout_margin="1dp"
             android:textColor="#FFF"
-            android:background="@color/baseColorDark"
             android:textSize="42sp" />
 
     </LinearLayout>
