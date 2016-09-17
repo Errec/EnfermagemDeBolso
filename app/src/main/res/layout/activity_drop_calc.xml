@@ -22,7 +22,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@drawable/calcDrop" />
+            android:src="@drawable/calc_drop" />
 
         <TextView
             android:layout_width="0dp"
@@ -36,12 +36,15 @@
         <EditText
             android:id="@+id/edittext_volume"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
+            android:layout_marginRight="2dp"
             android:layout_weight="4"
             android:background="#FFFFFF"
             android:gravity="bottom|end"
+            android:hint="999999"
+            android:paddingRight="4dp"
             android:textColor="#000000"
             android:textColorHighlight="#000000"
             android:textCursorDrawable="@null"
@@ -78,7 +81,7 @@
             android:layout_weight="2"
             android:scaleX="0.85"
             android:scaleY="0.85"
-            android:src="@drawable/calcClock" />
+            android:src="@drawable/calc_clock" />
 
         <TextView
             android:layout_width="0dp"
@@ -92,12 +95,15 @@
         <EditText
             android:id="@+id/edittext_time"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="35dp"
             android:layout_gravity="center"
             android:layout_marginLeft="8dp"
+            android:layout_marginRight="2dp"
             android:layout_weight="4"
             android:background="#FFFFFF"
             android:gravity="bottom|end"
+            android:hint="00:00"
+            android:paddingRight="4dp"
             android:textColor="#000000"
             android:textColorHighlight="#000000"
             android:textCursorDrawable="@null"

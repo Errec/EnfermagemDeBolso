@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
-    android:background="#7bda6e"
+    android:background="@color/baseColorLight"
     android:padding="6dp"
     tools:context=".MedicalDictionary">
 
@@ -18,8 +18,15 @@
         android:src="@drawable/dic_bandaid" />
 
     <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/baseColor"
+        android:layout_toRightOf="@id/item_imgIconID"/>
+
+    <TextView
         android:id="@+id/item_txtCategory"
         android:layout_width="fill_parent"
+        android:layout_marginLeft="8dp"
         android:layout_height="26dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
@@ -27,20 +34,24 @@
         android:ellipsize="marquee"
         android:singleLine="true"
         android:text="Description"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
     <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="2dp"
         android:id="@+id/item_txtName"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/item_txtCategory"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textColor="#000"
         android:layout_alignWithParentIfMissing="true"
         android:layout_toRightOf="@id/item_imgIconID"
         android:gravity="center_vertical"
         android:text="Band-aid de Hemorroida"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
 
 </RelativeLayout>

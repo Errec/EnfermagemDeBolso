@@ -3,16 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#37bfaf"
     android:orientation="vertical"
     tools:context=".PopupDictionary">
 
 
     <TextView
         android:id="@+id/popup_headline_Text"
+        android:background="@color/baseColorDark"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:textColor="#FFF"
         android:gravity="center"
         android:text="headline"
         android:textAllCaps="true"
@@ -22,17 +23,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#000000"/>
+        android:background="@color/baseColorLight"/>
 
     <TextView
         android:id="@+id/popup_body_Text"
         android:layout_width="match_parent"
+        android:background="@color/baseColor"
         android:layout_height="0dp"
         android:layout_weight="9"
+
+        android:textColor="#FFF"
         android:paddingLeft="8dp"
         android:paddingTop="12dp"
-        android:text="articleBody"
-        android:textSize="16sp"
+        android:text="Article body"
+        android:textSize="20sp"
         />
 
 </LinearLayout>
