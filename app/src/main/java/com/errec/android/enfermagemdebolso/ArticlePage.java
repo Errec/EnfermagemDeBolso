@@ -28,4 +28,4 @@ public class ArticlePage extends AppCompatActivity {
     }
 }
 
-//TODO: set source link text, body text, image, share button, comment button,  collapsing layout
+//TODO: set source link text, body text, image, icon_share button, comment button,  collapsing layout

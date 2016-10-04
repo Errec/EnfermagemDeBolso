@@ -81,4 +81,4 @@ public class NewsRVAdapter extends RecyclerView.Adapter<NewsRVAdapter.ArticleVie
         }
     }
 }
-//TODO: share and comment bottom
+//TODO: icon_share and comment bottom
