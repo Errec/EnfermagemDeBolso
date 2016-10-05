@@ -6,5 +6,8 @@
     <color name="baseColorLight">#90caf9</color>
     <color name="baseColor">#448aff</color>
     <color name="baseColorDark">#081831</color>
+    <color name="materialGrey">#eeeeee</color>
+    <color name="materialGreyDark">#212121</color>
+    <color name="materialGreyLight">#fafafa</color>
 
 </resources>

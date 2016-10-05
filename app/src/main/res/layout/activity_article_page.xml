@@ -4,77 +4,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/baseColorLight"
     tools:context="com.errec.android.enfermagemdebolso.ArticlePage">
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:src="@drawable/enfnoticias" />
-
-        <TextView
-            android:id="@+id/article_page_title"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:text="TITLE TITLE TILE TITLE TITLE TITLE TITLE TITLE TITLE"
-            android:textSize="20sp" />
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:background="@color/materialGreyLight"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/enfnoticias" />
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/materialGrey"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui, pulvinar"
+                android:textColor="@color/materialGreyDark" />
+
+            <TextView
+                android:id="@+id/article_page_title"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="3 hours ago" />
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Lorem ipsum dolor sit amet adipiscing elit enean faucibus"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="12 mar 2016"
+                    android:textColor="@color/materialGreyDark" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textStyle= "bold"
+                    android:text="Fonte: www.link.com"
+                    android:textColor="@color/baseColor" />
+
+            </LinearLayout>
 
             <TextView
-                android:layout_width="1dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:background="#000000" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="Font: www.link.com"
-                android:textColor="#ff0000" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="38dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper eros ut felis interdum, in laoreet dolor finibus. Nullam porttitor, nibh id elementum vulputate, dolor purus iaculis nibh, at faucibus urna lacus vel turpis. Maecenas quis mauris eu erat cursus faucibus sit amet nec nisi. Cras volutpat convallis libero sed iaculis. Phasellus posuere efficitur mattis. Quisque lobortis ipsum erat, id iaculis erat imperdiet vel. Mauris pulvinar, magna quis facilisis gravida, nibh nibh dapibus ante, quis feugiat nulla libero eu nulla. Nulla eget augue neque. Integer eget eros nulla. Nam in turpis vitae nunc dignissim euismod eget et purus. Ut pellentesque lobortis eros, eu pharetra.\n\nMunc pellentesque ut.Praesent metus eros, porttitor ac suscipit nec, sagittis at massa. Aenean sed ex id nisl consequat varius non eu nisi. Vivamus gravida felis sed ipsum pellentesque tempus. Etiam porta, risus eu vestibulum ullamcorper, urna massa maximus lorem, ac scelerisque neque diam a ex. Nulla nec fringilla velit. Mauris iaculis aliquet lectus. A placerat ante placerat sit amet. Mauris viverra sapien id cursus semper. In gravida tortor lorem, nec semper sem fringilla sit amet. Sed imperdiet sagittis eros ac pharetra. Sed sodales iaculis dignissim. Fusce non augue et diam convallis luctus ut eget lectus. Ut vehicula enim vitae ipsum volutpat blandit. Proin sed est eget ex porttitor porta.Nullam.\n\nFacilisis odio libero, at pharetra nisi viverra ac. Nulla eget euismod mauris. Duis eget leo imperdiet, faucibus ipsum at, tempor urna. Suspendisse varius et nibh ac auctor. Mauris venenatis, risus quis fermentum finibus, diam purus porttitor enim, id aliquam ligula magna id tortor. Nam consectetur quam eu nisi viverra, vel auctor neque maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Phasellus tempus risus at fermentum feugiat. Maecenas gravida in neque in sollicitudin. Vivamus posuere tempus dui, a porttitor nisl placerat vitae.Nulla iaculis ornare mauris, id gravida odio interdum eget. Nulla enim odio, tempus non lorem nec.\n\nCongue consectetur magna. Nulla faucibus augue nec imperdiet posuere. Maecenas vehicula iaculis ultricies. Nam faucibus odio tempus nunc interdum volutpat. Donec sollicitudin a magna at maximus. Etiam tincidunt vitae lorem non varius. Etiam a placerat felis. Proin commodo mauris id vehicula vestibulum. Aliquam erat volutpat. Suspendisse vitae libero sed massa fringilla rutrum eu eget nunc. Pellentesque commodo pharetra turpis, in consequat mauris ornare in. Mauris ornare ligula ut mauris euismod, eu consequat turpis egestas. Suspendisse potenti. In facilisis lacus risus, eu consectetur sem porttitor nec. In facilisis sagittis augue.Morbi varius lorem non sem iaculis, quis venenatis sapien convallis.\n\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer a eleifend mauris. Cras sit amet dignissim enim. Duis tincidunt purus non velit euismod lobortis. Morbi ultricies augue in nunc convallis pulvinar eget eget felis. Vivamus scelerisque tincidunt leo, ut commodo dui pretium in. Nam pretium tempor lorem, non mattis ipsum sollicitudin a. In posuere odio sed auctor posuere. In id leo faucibus, faucibus ipsum vel, vulputate nisi. Nulla non ligula et quam fringilla pretium eget at tortor. Integer porttitor elit eu turpis placerat venenatis. Pellentesque elementum, neque ac mollis vulputate, nibh sapien facilisis tortor, eu porttitor augue magna at ante. Duis sem dui, tincidunt sit amet efficitur at, mollis vel massa. Fusce sit amet cursus urna, a condimentum urna."
+                android:textColor="@color/materialGreyDark"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/baseColorLight"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/icon_link" />
+
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="          Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body
-Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body
-Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body
-Body Body Body Body Body Body Body Body Body Body Body Body Body Body " />
+            android:id="@+id/article_footer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:text="Texto original"
+            android:textColor="@color/materialGreyDark"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/icon_share" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/icon_comment" />
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_alignTop="@+id/article_footer"
-        android:background="#000000" />
-
-    <TextView
-        android:id="@+id/article_footer"
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:layout_alignParentBottom="true"
-        android:paddingTop="4dp"
-        android:text="Coments    share        read the original here" />
 
 </RelativeLayout>
 
