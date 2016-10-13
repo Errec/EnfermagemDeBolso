@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/baseColorLight"
     android:orientation="vertical"
     tools:context="com.errec.android.enfermagemdebolso.PopupAnswer">
 
@@ -11,21 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:textStyle="bold"
+        android:textColor="@color/materialGreyLight"
         android:gravity="center"
-        android:text="Correto"
-        android:textSize="45sp" />
+        android:text="Correto!"
+        android:textSize="50sp" />
+
 
     <ImageView
         android:id="@+id/answer_image"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:src="@drawable/ic_plusone_tall_off_client" />
+        android:src="@drawable/true_icon" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:textColor="@color/materialGreyDark"
         android:gravity="center"
         android:text="Rever Questao"
         android:textSize="16sp" />
@@ -34,9 +40,13 @@
         android:id="@+id/next_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/baseColorDark"
         android:layout_marginLeft="100dp"
+        android:textColor="@color/materialGreyLight"
         android:layout_marginRight="100dp"
         android:layout_weight="1"
-        android:text="proxima" />
+        android:textSize="18sp"
+        android:text="próxima" />
 
 </LinearLayout>

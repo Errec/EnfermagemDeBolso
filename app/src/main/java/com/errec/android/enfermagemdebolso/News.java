@@ -28,11 +28,7 @@ public class News extends AppCompatActivity {
     private void initializeData() {
         articles.add(new Article("0title", "0link", "0body", R.drawable.enfnotum));
         articles.add(new Article("1title", "1link", "1body", R.drawable.enfnoticias));
-        articles.add(new Article("2title", "2link", "2body", R.drawable.image1));
-        articles.add(new Article("3title", "3link", "3body", R.drawable.image2));
-        articles.add(new Article("4title", "4link", "4body", R.drawable.image3));
         articles.add(new Article("5title", "5link", "5body", R.drawable.enfnotum));
-        articles.add(new Article("6title", "6link", "6body", R.drawable.image3));
         articles.add(new Article("7title", "7link", "7body", R.drawable.enfnoticias));
     }
 
